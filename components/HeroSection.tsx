@@ -38,8 +38,8 @@ const Carousel = () => {
                                 <Image
                                     src={image.imgSrc}
                                     alt={`Image ${image.id}`}
-                                    className="object-cover rounded-xl"
-                                    priority
+                                    className="size-full object-cover object-center rounded-xl"
+                                    loading="lazy"
                                 />
                             </div>
                         ))}

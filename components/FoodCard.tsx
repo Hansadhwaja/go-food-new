@@ -43,7 +43,7 @@ const FoodCard = ({ id, name, img, description, options, index }: FoodData) => {
             animationDelay: `${index * .25}s`,
         }}>
             <div className="relative overflow-hidden w-full h-60 xl:h-auto md:w-[50%]">
-                <Image src={img} alt={name} fill sizes='33vw' className="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 size-full" />
+                <Image src={img} alt={name} fill sizes='33vw' className="object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 size-full" loading='lazy' />
             </div>
             <div className='p-4 w-full md:w-[50%] my-auto'>
                 <h2 className="text-lg xl:text-2xl font-bold">{name}</h2>
